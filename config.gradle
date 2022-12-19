@@ -1,0 +1,11 @@
+ext {
+    android = [
+            compileSdk           : 32,
+            minSdk               : 21,
+            targetSdk            : 32,
+            versionCode          : 3,
+            renderscriptTargetApi: 18,
+            versionName          : "1.0.0",
+            multiDexEnabled      : false
+    ]
+}
