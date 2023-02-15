@@ -12,3 +12,6 @@ dependencyResolutionManagement {
 rootProject.name = "VideoKit_RTSP"
 include ':app'
 include ':videok_rtsp'
+include ':SwiftKit'
+project(':SwiftKit').projectDir = new File("C:\\Users\\mozhimen\\Documents\\GitHub\\SwiftKit")
+include ':SwiftKit:basick'
