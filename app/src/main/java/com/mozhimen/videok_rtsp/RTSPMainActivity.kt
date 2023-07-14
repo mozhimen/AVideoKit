@@ -2,8 +2,10 @@ package com.mozhimen.videok_rtsp
 
 import android.os.Bundle
 import cn.nodemedia.NodePlayer
-import com.mozhimen.basick.elemk.activity.bases.BaseActivityVB
-import com.mozhimen.basick.statusbark.StatusBarK
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.BaseActivityVB
+import com.mozhimen.uicorek.adaptk.systembar.AdaptKSystemBar
+import com.mozhimen.uicorek.adaptk.systembar.cons.CProperty
+import com.mozhimen.uicorek.adaptk.systembar.initAdaptKSystemBar
 import com.mozhimen.videok_rtsp.databinding.ActivityMainBinding
 
 class RTSPMainActivity : BaseActivityVB<ActivityMainBinding>() {
@@ -11,7 +13,7 @@ class RTSPMainActivity : BaseActivityVB<ActivityMainBinding>() {
     private var _nodePlayer: NodePlayer? = null
 
     override fun initFlag() {
-        StatusBarK.initStatusBar(this)
+        initAdaptKSystemBar(CProperty.IMMERSED_HARD_STICKY)
     }
 
     override fun initData(savedInstanceState: Bundle?) {
@@ -21,8 +23,8 @@ class RTSPMainActivity : BaseActivityVB<ActivityMainBinding>() {
             setRtspTransport(NodePlayer.RTSP_TRANSPORT_TCP)
             setInputUrl(_rtspUrl)        //设置视频是否开启
             setVideoEnable(true)
-            setBufferTime(200)
-            setMaxBufferTime(200)
+            setBufferTime(500)
+            setMaxBufferTime(1000)
         }
         super.initData(savedInstanceState)
     }
