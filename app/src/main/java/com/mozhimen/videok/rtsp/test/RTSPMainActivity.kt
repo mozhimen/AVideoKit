@@ -1,25 +1,19 @@
-package com.mozhimen.videok_rtsp
+package com.mozhimen.videok.rtsp.test
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import cn.nodemedia.NodePlayer
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.BaseActivityVB
-import com.mozhimen.uicorek.adaptk.systembar.AdaptKSystemBar
-import com.mozhimen.uicorek.adaptk.systembar.cons.CProperty
-import com.mozhimen.uicorek.adaptk.systembar.initAdaptKSystemBar
-import com.mozhimen.videok_rtsp.databinding.ActivityMainBinding
+import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
+import com.mozhimen.videok.rtsp.test.databinding.ActivityMainBinding
 
-class RTSPMainActivity : BaseActivityVB<ActivityMainBinding>() {
+class RTSPMainActivity : BaseActivityVDB<ActivityMainBinding>() {
     private val _rtspUrl = "rtsp://admin:shangqu2020@192.168.2.26:554/cam/realmonitor?channel=1&subtype=0"
     private var _nodePlayer: NodePlayer? = null
-
-    override fun initFlag() {
-        initAdaptKSystemBar(CProperty.IMMERSED_HARD_STICKY)
-    }
 
     override fun initData(savedInstanceState: Bundle?) {
         _nodePlayer = NodePlayer(this)        //设置播放视图
         _nodePlayer!!.apply {
-            setPlayerView(vb.mainRtspView)        //设置RTSP流使用的传输协议,支持的模式有:
+            setPlayerView(vdb.mainRtspView)        //设置RTSP流使用的传输协议,支持的模式有:
             setRtspTransport(NodePlayer.RTSP_TRANSPORT_TCP)
             setInputUrl(_rtspUrl)        //设置视频是否开启
             setVideoEnable(true)

@@ -12,9 +12,12 @@ dependencyResolutionManagement {
 rootProject.name = "VideoKit_RTSP"
 include ':app'
 include ':videok_rtsp'
+//SwiftKit
 include ':SwiftKit'
-project(':SwiftKit').projectDir = new File("C:\\Users\\83524\\Documents\\GitHub\\SwiftKit")
+project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
-include ':SwiftKit:uicorek'
-include ':SwiftKit:underlayk'
-include ':SwiftKit:componentk'
+include ':SwiftKit:xmlk'
+//AXmlKit
+include ':AXmlKit'
+project(':AXmlKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AXmlKit")
+include ':AXmlKit:textk'

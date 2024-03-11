@@ -4,11 +4,13 @@ plugins {
 }
 
 android {
+    namespace "com.mozhimen.videok.rtsp"
     compileSdk rootProject.android.compileSdk
 
     defaultConfig {
         minSdk rootProject.android.minSdk
         targetSdk rootProject.android.targetSdk
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -30,8 +32,8 @@ android {
 }
 
 dependencies {
-
     api 'com.github.NodeMedia:NodeMediaClient-Android:2.9.22'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'

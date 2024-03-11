@@ -5,11 +5,12 @@ plugins {
 }
 
 android {
+    namespace "com.mozhimen.videok.rtsp.test"
     compileSdk rootProject.android.compileSdk
 
     defaultConfig {
-        applicationId "com.mozhimen.videok_rtsp"
-        minSdk rootProject.android.minSdk
+        applicationId "com.mozhimen.videok.rtsp.test"
+        minSdk 21
         targetSdk rootProject.android.targetSdk
         versionCode rootProject.android.versionCode
         versionName rootProject.android.versionName
@@ -39,8 +40,8 @@ dependencies {
 
     implementation project(':videok_rtsp')
     implementation project(':SwiftKit:basick')
-    implementation project(':SwiftKit:uicorek')
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation project(':SwiftKit:xmlk')
+    implementation project(':AXmlKit:textk')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'

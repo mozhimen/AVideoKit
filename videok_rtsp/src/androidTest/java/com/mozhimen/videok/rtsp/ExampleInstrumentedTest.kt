@@ -1,4 +1,4 @@
-package com.mozhimen.videok_rtsp
+package com.mozhimen.videok.rtsp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

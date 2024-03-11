@@ -1,4 +1,4 @@
-package com.mozhimen.videok_rtsp
+package com.mozhimen.videok.rtsp
 
 import org.junit.Test
 
