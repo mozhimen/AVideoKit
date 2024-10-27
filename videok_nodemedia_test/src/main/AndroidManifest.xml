@@ -13,7 +13,7 @@
         android:theme="@style/Theme.VideoKit_RTSP"
         tools:targetApi="31">
         <activity
-            android:name=".RTSPMainActivity"
+            android:name="com.mozhimen.videok.nodemedia.test.RTSPMainActivity"
             android:exported="true"
             android:screenOrientation="landscape">
             <intent-filter>

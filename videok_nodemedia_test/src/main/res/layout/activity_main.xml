@@ -8,7 +8,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RTSPMainActivity">
+        tools:context="com.mozhimen.videok.nodemedia.test.RTSPMainActivity">
 
         <cn.nodemedia.NodePlayerView
             android:id="@+id/main_rtsp_view"

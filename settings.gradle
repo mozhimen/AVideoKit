@@ -9,15 +9,21 @@ dependencyResolutionManagement {
         google()
     }
 }
-rootProject.name = "VideoKit_RTSP"
-include ':app'
-include ':videok_rtsp'
+rootProject.name = "AVideoKit"
+include ':videok_nodemedia_test'
+include ':videok_nodemedia'
 //SwiftKit
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
+include ':SwiftKit:bindk'
 include ':SwiftKit:xmlk'
 //AXmlKit
 include ':AXmlKit'
 project(':AXmlKit').projectDir = new File("D:\\WorkSpace\\GitHub\\AXmlKit")
 include ':AXmlKit:textk'
+//KUtilKit
+include ':KUtilKit'
+project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
+include ':KUtilKit:utilk_android'
+include ':KUtilKit:utilk_kotlin'

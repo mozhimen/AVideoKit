@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace "com.mozhimen.videok.rtsp.test"
+    namespace "com.mozhimen.videok.nodemedia.test"
     compileSdk rootProject.android.compileSdk
 
     defaultConfig {
-        applicationId "com.mozhimen.videok.rtsp.test"
+        applicationId "com.mozhimen.videok.nodemedia.test"
         minSdk 21
         targetSdk rootProject.android.targetSdk
         versionCode rootProject.android.versionCode
@@ -38,8 +38,8 @@ android {
 
 dependencies {
 
-    implementation project(':videok_rtsp')
-    implementation project(':SwiftKit:basick')
+    implementation project(':videok_nodemedia')
+    implementation project(':SwiftKit:bindk')
     implementation project(':SwiftKit:xmlk')
     implementation project(':AXmlKit:textk')
 

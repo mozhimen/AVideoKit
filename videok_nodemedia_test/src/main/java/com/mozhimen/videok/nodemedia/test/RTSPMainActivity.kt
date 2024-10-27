@@ -1,10 +1,9 @@
-package com.mozhimen.videok.rtsp.test
+package com.mozhimen.videok.nodemedia.test
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import cn.nodemedia.NodePlayer
-import com.mozhimen.basick.elemk.androidx.appcompat.bases.databinding.BaseActivityVDB
-import com.mozhimen.videok.rtsp.test.databinding.ActivityMainBinding
+import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
+import com.mozhimen.videok.nodemedia.test.databinding.ActivityMainBinding
 
 class RTSPMainActivity : BaseActivityVDB<ActivityMainBinding>() {
     private val _rtspUrl = "rtsp://admin:shangqu2020@192.168.2.26:554/cam/realmonitor?channel=1&subtype=0"

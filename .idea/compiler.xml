@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="17" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="VideoKit_RTSP.app" target="17" />
+      <module name="VideoKit_RTSP.AXmlKit.textk" target="17" />
+      <module name="VideoKit_RTSP.SwiftKit.basick" target="17" />
+      <module name="VideoKit_RTSP.SwiftKit.bindk" target="17" />
+      <module name="VideoKit_RTSP.SwiftKit.xmlk" target="17" />
+      <module name="VideoKit_RTSP.videok_nodemedia" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
