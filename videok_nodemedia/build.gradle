@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-    api 'com.github.NodeMedia:NodeMediaClient-Android:2.9.22'
+    api 'com.github.NodeMedia:NodeMediaClient-Android:2.9.24'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
