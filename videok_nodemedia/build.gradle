@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace "com.mozhimen.videok.rtsp"
+    namespace "com.mozhimen.videok.nodemedia"
     compileSdk rootProject.android.compileSdk
 
     defaultConfig {
